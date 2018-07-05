@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mad Libs</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <style>
+    body
+    {
+      background-color: lightgreen;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Add New Place</h1>
+    <form action="/places/list" method="post">
+      <label for="new-location">Enter Location</label>
+      <input id="new-location" name="new-location" type="text" class="form-control">
+      <label for="new-dates">Enter Dates Visited</label>
+      <input id="new-dates" name="new-dates" type="text" class="form-control">
+      <label for="new-picture">Enter URL for an image of the location</label>
+      <input id="new-picture" name="new-picture" type="text" class="form-control">
+      <button type="submit">Submit</button>
+    </form><br>
+    <a href="/places/list">View Places</a><br>
+    <a href="/">Home</a>
+    </div>
+  </body>
+</html>
